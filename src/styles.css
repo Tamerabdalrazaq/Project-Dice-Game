@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    display: flex;
+    position: relative;
+}
+
+.player{
+    width: 50%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #F8F6F8 , #a99898);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.player.P2{
+    background-image: linear-gradient(to right, #a99898, #fff);
+}
+
+.player h1.player-title{
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 4rem;
+}
+
+.tools{
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+
+.tools input{
+    padding: 1rem;
+    font-size: 1.8rem;
+    outline: none;
+    border: 2.4px solid #333;
+    text-align: center;
+    background: none;
+    position: relative;
+    width: 70%;
+}
+
+.tools #mainInput{
+    border-right: none;
+}
+.tools #dollar{
+    width: 30%;
+    border-left: none;
+    color: rgb(82, 162, 42);
+}
+
+.tools button{
+    padding: 1rem 1.4rem;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    border: 2.4px solid #333;
+    font-size: 2rem;
+    color: #eee;
+    width: 100%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
